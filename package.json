@@ -1,0 +1,12 @@
+{
+  "name": "@kricsleo/eslint-config",
+  "version": "0.0.0",
+  "description": "ESlint config by @kricsleo",
+  "keywords": ["ESlint"],
+  "author": "Kricsleo <kricsleo@163.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
