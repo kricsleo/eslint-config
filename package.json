@@ -9,9 +9,13 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:fix": "eslint playground/**/* --fix -c index.js"
   },
   "dependencies": {
     "@antfu/eslint-config": "^0.38.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.38.0"
   }
 }
