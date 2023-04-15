@@ -10,14 +10,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "bumpp && npm publish",
     "lint": "eslint playground/**/* -c index.js --no-cache",
-    "lint:fix": "eslint playground/**/* -c index.js --fix --no-cache",
-    "publish": "npm run publish"
+    "lint:fix": "eslint playground/**/* -c index.js --fix --no-cache"
   },
   "dependencies": {
     "@antfu/eslint-config": "^0.38.5"
   },
   "devDependencies": {
+    "bumpp": "^9.1.0",
     "eslint": "^8.38.0"
   },
   "publishConfig": {
