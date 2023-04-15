@@ -1,7 +1,7 @@
 {
   "name": "@kricsleo/eslint-config",
   "version": "0.0.0",
-  "description": "ESlint config by @kricsleo",
+  "description": "Kricsleo's ESlint config",
   "author": "Kricsleo <kricsleo@163.com>",
   "license": "MIT",
   "keywords": [
