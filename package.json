@@ -10,7 +10,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "bumpp && npm publish",
+    "release": "bumpp && npm publish --access public",
     "lint": "eslint playground/**/* -c index.js --no-cache",
     "lint:fix": "eslint playground/**/* -c index.js --fix --no-cache"
   },
