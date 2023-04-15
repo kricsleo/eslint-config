@@ -2,16 +2,16 @@
   "name": "@kricsleo/eslint-config",
   "version": "0.0.0",
   "description": "ESlint config by @kricsleo",
+  "author": "Kricsleo <kricsleo@163.com>",
+  "license": "MIT",
   "keywords": [
     "ESlint"
   ],
-  "author": "Kricsleo <kricsleo@163.com>",
-  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint playground/**/* -c index.js",
-    "lint:fix": "eslint playground/**/* --fix -c index.js"
+    "lint": "eslint playground/**/* -c index.js --no-cache",
+    "lint:fix": "eslint playground/**/* -c index.js --fix --no-cache"
   },
   "dependencies": {
     "@antfu/eslint-config": "^0.38.5"
