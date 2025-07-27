@@ -15,11 +15,11 @@
     "lint:fix": "eslint playground/**/* -c index.js --fix --no-cache"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^0.38.5"
+    "@antfu/eslint-config": "^5.0.0"
   },
   "devDependencies": {
-    "bumpp": "^9.1.0",
-    "eslint": "^8.38.0"
+    "bumpp": "^10.2.0",
+    "eslint": "^9.32.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
