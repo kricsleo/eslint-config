@@ -1,13 +1,14 @@
 {
   "name": "@kricsleo/eslint-config",
   "version": "0.0.1",
-  "description": "Kricsleo's ESlint config",
+  "description": "Kricsleo's opinionated ESLint config",
   "author": "Kricsleo <kricsleo@163.com>",
   "license": "MIT",
   "keywords": [
-    "ESlint"
+    "ESLint"
   ],
-  "main": "index.js",
+  "main": "index.mjs",
+  "module": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "bumpp && npm publish --access public",
