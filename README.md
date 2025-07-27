@@ -1,5 +1,5 @@
 # eslint-config
 
-🫧 Personal ESlint config.
+🫧 My personal opinionated ESLint config.
 
 > 🦀 WIP
