@@ -1,12 +1,13 @@
-module.exports = {
-  root: true,
-  extends: [
-    '@antfu/eslint-config',
-  ],
-  rules: {
+import eslint from '@antfu/eslint-config'
+
+export function defineConfig(): ReturnType<typeof eslint> {
+  return eslint({
+    rules: {
+
     /** Basic */
     // @see https://eslint.org/docs/latest/rules/curly
     'curly': ['error', 'all'],
+
 
     /** Vue */
     // @see https://eslint.vuejs.org/rules/max-attributes-per-line.html
@@ -14,6 +15,6 @@ module.exports = {
       'error',
       { singleline: { max: 3 } },
     ],
-
-  },
+    }
+  })
 }

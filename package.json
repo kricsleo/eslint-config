@@ -7,20 +7,22 @@
   "keywords": [
     "ESLint"
   ],
-  "main": "index.mjs",
-  "module": "index.mjs",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "bumpp && npm publish --access public",
-    "lint": "eslint playground/**/* -c index.js --no-cache",
-    "lint:fix": "eslint playground/**/* -c index.js --fix --no-cache"
+    "build": "obuild ./src/index.ts",
+    "release": "bumpp && npm publish",
+    "lint": "eslint playground/**/* --no-cache",
+    "lint:fix": "eslint playground/**/* index.js --fix --no-cache"
   },
   "dependencies": {
     "@antfu/eslint-config": "^5.0.0"
   },
   "devDependencies": {
     "bumpp": "^10.2.0",
-    "eslint": "^9.32.0"
+    "eslint": "^9.32.0",
+    "obuild": "^0.2.1"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
