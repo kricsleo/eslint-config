@@ -10,6 +10,13 @@ export default antfu({
 
   rules: {
     /**
+     * Enforce curly braces for all control statements.
+     *
+     * @see https://eslint.org/docs/latest/rules/curly
+     */
+    'curly': ['error', 'all'],
+
+    /**
      * Enforce self-closing tags if no children.
      *
      * (It's unsafe in raw html for void elements (e.g. `<img>`/`<br>`),
