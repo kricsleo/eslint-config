@@ -1,7 +1,5 @@
-import eslint from '@antfu/eslint-config'
+import antfu from '@antfu/eslint-config'
 
-export default eslint({
-  rules: {
-    curly: ['error', 'all'],
-  },
+export default antfu({
+  vue: true,
 })
