@@ -1,4 +1,4 @@
-import antfu from '@antfu/eslint-config'
+import antfu from '@antfu/eslint-config';
 
 /**
  * Run `pnpm eslint --inspect-config` to inspect the configuration visually.
@@ -15,6 +15,13 @@ export default antfu({
      * @see https://eslint.org/docs/latest/rules/curly
      */
     'curly': ['error', 'all'],
+
+    /**
+     * Enforce semicolons all the time.
+     *
+     * @see https://eslint.style/rules/semi
+     */
+    'style/semi': ['error', 'always'],
 
     /**
      * Enforce self-closing tags if no children.
@@ -67,4 +74,4 @@ export default antfu({
       autofix: false,
     }],
   },
-})
+});
