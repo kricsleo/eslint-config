@@ -47,5 +47,17 @@ export default antfu({
      * @see https://eslint.vuejs.org/rules/attribute-hyphenation.html
      */
     'vue/attribute-hyphenation': ['error', 'never'],
+
+    /**
+     * Enforce camelCase event names.
+     *
+     * The autofix is not safe for Vue 2,
+     * we recommend to fix it manually.
+     *
+     * @see https://eslint.vuejs.org/rules/v-on-event-hyphenation.html
+     */
+    'vue/v-on-event-hyphenation': ['error', 'never', {
+      autofix: false,
+    }],
   },
 })
