@@ -10,7 +10,7 @@ export default antfu({
 
   rules: {
     /**
-     * Always enforce self-closing tags if no children.
+     * Enforce self-closing tags if no children.
      *
      * (It's unsafe in raw html for void elements (e.g. `<img>`/`<br>`),
      * but we are always using Vue or React, so it's always fine.)
@@ -29,5 +29,23 @@ export default antfu({
       svg: 'always',
       math: 'always',
     }],
+
+    /**
+     * Enfore a maximum of 3 attributes per line if single line,
+     * and 1 attribute per line if multiline.
+     *
+     * @see https://eslint.vuejs.org/rules/max-attributes-per-line.html
+     */
+    'vue/max-attributes-per-line': ['error', {
+      singleline: 3,
+      multiline: 1,
+    }],
+
+    /**
+     * Enfore camelCase attribute names.
+     *
+     * @see https://eslint.vuejs.org/rules/attribute-hyphenation.html
+     */
+    'vue/attribute-hyphenation': ['error', 'never'],
   },
 })
