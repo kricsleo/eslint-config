@@ -17,11 +17,11 @@
     "lint:fix": "eslint playground/**/* index.js --fix --no-cache"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^5.0.0"
+    "@antfu/eslint-config": "^5.1.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^5.1.0",
-    "bumpp": "^10.2.0",
+    "bumpp": "^10.2.2",
     "eslint": "^9.32.0",
     "obuild": "^0.2.1",
     "vue": "^3.5.18"
