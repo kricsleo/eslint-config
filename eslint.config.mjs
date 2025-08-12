@@ -73,5 +73,6 @@ export default antfu({
     'vue/v-on-event-hyphenation': ['error', 'never', {
       autofix: false,
     }],
+    'vue/custom-event-name-casing': ['error', 'camelCase'],
   },
 });
